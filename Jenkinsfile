@@ -17,11 +17,6 @@ pipeline {
                 echo 'Deploy'
             }
         }
-        stage('Umar') {
-            steps {
-                echo 'Anjay'
-            }
-        }
     }
 
     post {
