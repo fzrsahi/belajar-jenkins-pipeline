@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    environtment {
+    environment {
         EXAMPLE_ENV = credentials('awikwok===')
     }
 
