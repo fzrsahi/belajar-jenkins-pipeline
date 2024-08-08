@@ -12,12 +12,6 @@ pipeline {
             }
         }
 
-        stage('example correct') {
-            steps {
-                sh('echo $EXAMPLE_ENV')
-            }
-        }
-
         stage('verify tooling') {
             steps {
                 sh '''
