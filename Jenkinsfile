@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Example stage 1') {
             steps {
-                echo "Hello ${fzrsahi}"
+                echo "Hello ${AWS_ACCESS_KEY_ID}"
             }
         }
     }
