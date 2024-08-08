@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        EXAMPLE_ENV = credentials('awikwok===')
+        EXAMPLE_ENV = credentials('fzrsahi')
     }
 
     stages {
