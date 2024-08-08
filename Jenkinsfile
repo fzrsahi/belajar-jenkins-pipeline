@@ -1,7 +1,23 @@
 pipeline {
     agent any
 
+    environtment {
+        EXAMPLE_ENV = credentials('awikwok===')
+    }
+
     stages {
+        stage('example incorrect') {
+            steps {
+                sh("echo ${EXAMPLE_ENV}")
+            }
+        }
+
+        stage('example correct') {
+            steps {
+                sh('echo $EXAMPLE_ENV')
+            }
+        }
+
         stage('verify tooling') {
             steps {
                 sh '''
